@@ -4,15 +4,15 @@ if(isset($_POST['stop'], $_POST['id'])){
         echo '不正です。';
         exit;
     }
-    $cmd = 'python3 ./cmd/seerver_stop.py '.escapeshellcmd($_POST['id']);
+    $cmd = 'python3 ./cmd/server_stop.py '.escapeshellcmd($_POST['id']);
     $res = shell_exec($cmd);
     if(!$res === 'completion'){
         echo 'エラーが発生しました。';
         exit;
     }
-    echo '<div class=stop>'
-    echo '<p>サーバーを停止します。</p>'
-    echo '</div>'
+    echo '<div class=stop>';
+    echo '<p>サーバーを停止します。</p>';
+    echo '</div>';
 }
 ?>
 <!DOCTYPE html>
@@ -21,6 +21,7 @@ if(isset($_POST['stop'], $_POST['id'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>サーバー停止</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <p>サーバーを停止します。</p>

@@ -1,5 +1,7 @@
 <?php
 $res = shell_exec('python3 ./cmd/info.py');
+$res = str_replace('True','有効',$res);
+$res = str_replace('False','無効',$res);
 ?>
 <!DOCTYPE html>
 <html lang="ja">

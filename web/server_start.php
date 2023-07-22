@@ -4,7 +4,7 @@ if(isset($_POST['start'], $_POST['id'])){
         echo '不正です。';
         exit;
     }
-    $cmd = 'python3 ./cmd/seerver_start.py '.escapeshellcmd($_POST['id']);
+    $cmd = 'python3 ./cmd/server_start.py '.escapeshellcmd($_POST['id']);
     $res = shell_exec($cmd);
     if(!$res === 'completion'){
         echo 'エラーが発生しました。';
@@ -21,6 +21,7 @@ if(isset($_POST['start'], $_POST['id'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>サーバーを起動</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <p>サーバーを起動します。</p>
