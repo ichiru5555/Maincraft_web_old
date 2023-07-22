@@ -1,9 +1,5 @@
 <?php
 if(isset($_POST['start'], $_POST['id'])){
-    if(!$_POST['id'] === '0' or $_POST['id'] === '1' or $_POST['id'] === '2'){
-        echo '不正です。';
-        exit;
-    }
     $cmd = 'python3 ./cmd/server_start.py '.escapeshellcmd($_POST['id']);
     $res = shell_exec($cmd);
     if(!$res === 'completion'){
@@ -24,7 +20,7 @@ if(isset($_POST['start'], $_POST['id'])){
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <p>サーバーを起動します。</p>
+    <p>サーバーを起動</p>
     <form method="post">
         <p>ドメイン名: </p>
         <input type="hidden" name="start">

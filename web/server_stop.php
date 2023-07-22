@@ -1,9 +1,5 @@
 <?php
 if(isset($_POST['stop'], $_POST['id'])){
-    if(!$_POST['id'] === '0' or $_POST['id'] === '1' or $_POST['id'] === '2'){
-        echo '不正です。';
-        exit;
-    }
     $cmd = 'python3 ./cmd/server_stop.py '.escapeshellcmd($_POST['id']);
     $res = shell_exec($cmd);
     if(!$res === 'completion'){
@@ -24,7 +20,7 @@ if(isset($_POST['stop'], $_POST['id'])){
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <p>サーバーを停止します。</p>
+    <p>サーバーを停止</p>
     <form method="post">
         <p>ドメイン名: </p>
         <input type="hidden" name="stop">
