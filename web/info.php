@@ -1,5 +1,5 @@
 <?php
-$res = shell_exec('./cmd/info.py');
+$res = shell_exec('python3 ./cmd/info.py');
 ?>
 <!DOCTYPE html>
 <html lang="ja">
