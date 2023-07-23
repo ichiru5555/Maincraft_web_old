@@ -5,7 +5,7 @@
 
 aternosフォルダにaternosをwebから操作できるのを入れてます。
 
-aternosを操作するのに
+aternosフォルダ使うために
 
 https://github.com/DarkCat09/python-aternos
 
