@@ -5,6 +5,8 @@
 
 aternosフォルダにaternosをwebから操作できるのを入れてます。
 
+aternosフォルダにあるのを使うとbanされるので使わないほうがいいです。
+
 aternosフォルダ使うために
 
 https://github.com/DarkCat09/python-aternos
