@@ -1,8 +1,14 @@
-# aternos_info
+# Maincraft_web
 自分のために作った。
 
-webに使うのはwebディレクトリに入れています。
+マインクラフトサーバーをwebから操作できるようにしています。
+
+aternosフォルダにaternosをwebから操作できるのを入れてます。
+
+aternosを操作するのに
 
 https://github.com/DarkCat09/python-aternos
 
-を使用して動作します。
+を使用しています。
+
+監視フォルダにマインクラフトサーバーを監視するのを入れています。
